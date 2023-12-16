@@ -1,16 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
-    
-    
+    <div class="container-fluid">
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!-- end navbar -->
+
+        <!-- carousel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- carouselContainer -->
+            <div class="carousel-inner">
+                <!-- carouselItem -->
+                <a class="carousel-item active carousel__item link-underline-opacity-0 link-underline"
+                    href="./pages/coffes.html">
+                    <div class="carousel__topBg">
+
+                    </div>
+
+                    <div class="carousel__bottom position-relative d-flex flex-column">
+                        <img class="carousel__coffeImg" src="./assets/images/coffeVector.png" alt="">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7 carousel__info sm-flex-row">
+                                    <div class="carousel__texts">
+                                        <h2 class="carousel__title">CAFÉ ARÁBICA</h2>
+                                        <h3 class="carousel__subtitle">Equilibrado, aromático y una acidez muy
+                                            agradable.</h3>
+                                        <p>
+                                            El arábica tiene entre un 0,8% y un 1,4% de cafeína, muy lejos del 4% que
+                                            puede llegar a tener un café robusta. Es sin duda, un café sutil, delicado y
+                                            elegante con un gran equilibrio entre sabor y cuerpo.
+                                        </p>
+                                        <p>
+                                            El grano de arábica puede distinguirse fácilmente a simple vista, ya que
+                                            tiene una forma más alargada y aplanada que el robusta y está atravesado por
+                                            una línea en forma de ligera S, su característica más visible.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 mt-sm-5 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./assets/images/arabicaGrain.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </a>
+
+                <a class="carousel-item carousel__item link-underline-opacity-0 link-underline"
+                    href="./pages/coffes.html">
+                    <div class="carousel__topBg">
+
+                    </div>
+
+                    <div class="carousel__bottom position-relative d-flex flex-column">
+                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolatePng.png" alt="">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7 carousel__info sm-flex-row">
+                                    <div class="carousel__texts">
+                                        <h2 class="carousel__title carousel__title--black">CAFÉ CHOCO</h2>
+                                        <h3 class="carousel__subtitle">
+                                            Intenso, aromático y con una acidez deliciosa, despierta tus sentidos con cada bocado.</h3>
+                                        <p>
+                                            Sumérgete en la rica indulgencia de nuestro chocolate de café, donde la intensidad del 
+                                            cacao se combina armoniosamente con notas aromáticas cautivadoras.
+                                        </p>
+                                        <p>
+                                            Experimenta una deliciosa danza de sabores mientras una sutil acidez eleva la 
+                                            experiencia, creando un placer irresistible en cada cuadrado. Un verdadero deleite 
+                                            para los amantes del chocolate y el café.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 mt-sm-5 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./assets/images/chocolateCoffe.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </a>
+                <!-- carouselItem -->
+                <a class="carousel-item carousel__item link-underline-opacity-0 link-underline"
+                    href="./pages/coffes.html">
+                    <div class="carousel__topBg">
+
+                    </div>
+
+                    <div class="carousel__bottom position-relative d-flex flex-column">
+                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolateWhitePng.png" alt="">
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-7 carousel__info sm-flex-row">
+                                    <div class="carousel__texts">
+                                        <h2 class="carousel__title carousel__title--white">CAFÉ CHOCO WHITE</h2>
+                                        <h3 class="carousel__subtitle">Equilibrado, aromático y una acidez muy
+                                            agradable.</h3>
+                                        <p>
+                                            Suave, exquisitamente cremoso y con una dulzura celestial, nuestro chocolate blanco
+                                            es una experiencia sublime para los sentidos. 
+                                        </p>
+                                        <p>
+                                            Deja que la suavidad se derrita en tu paladar mientras te envuelve en notas lácteas 
+                                            seductoras. Una delicia única que te transportará a un mundo de placer indulgente.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 mt-sm-5 d-flex justify-content-center">
+                                    <img class="img-fluid" src="./assets/images/arabicaGrain.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </a>
+            </div>
+            <!-- Left button control -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="custom-carousel-icon arrowCarousel" aria-hidden="true">&#9665;</span>
+
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <!-- rigth button  control  -->
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="custom-carousel-icon arrowCarousel" aria-hidden="true">&#9655;</span>
+
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div> <!-- end caroousel-->
+
+        <!-- start deliver -->
+        <article class="position-relative">
+
+            <!-- Onda superior -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#68b3ea" fill-opacity="1"
+                    d="M0,160L40,144C80,128,160,96,240,101.3C320,107,400,149,480,160C560,171,640,149,720,144C800,139,880,149,960,165.3C1040,181,1120,203,1200,208C1280,213,1360,203,1400,197.3L1440,192L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+                </path>
+            </svg>
+
+            <!-- Contenido principal -->
+            <section class="delivery d-flex flex-column flex-md-row justify-content-between wave-container">
+
+                <div class="d-flex flex-column flex-md-row">
+
+                    <!-- vectors -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+
+                        <!-- First item delivery -->
+                        <div class="itemDelivery d-flex flex-column justify-content-between text-center mb-4 mb-md-0">
+                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                                <img class="delivery__vector" src="./assets/images/vectors/transportation.png" alt="">
+                            </div>
+                            <h3>Somos rápidos.</h3>
+                            <p>Texto descripción.</p>
+                        </div>
+
+                        <!-- Second item delivery -->
+                        <div class="itemDelivery d-flex flex-column justify-content-between text-center mb-4 mb-md-0">
+                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                                <img class="delivery__vector" src="./assets/images/vectors/place.png" alt="">
+                            </div>
+                            <h3>Somos eficientes.</h3>
+                            <p>Texto descripción.</p>
+                        </div>
+
+                        <!-- Third item delivery -->
+                        <div class="itemDelivery d-flex flex-column justify-content-between text-center">
+                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                                <img class="delivery__vector" src="./assets/images/vectors/estrella.png" alt="">
+                            </div>
+                            <h3>Somos de calidad.</h3>
+                            <p>Texto descripción.</p>
+                        </div>
+                    </div><!-- end vectors -->
+
+
+                    <!-- Imagen de entrega (visible en pantallas medianas y más grandes) -->
+                    <img class="delivery__img d-none d-lg-block" src="./assets/images/delivery.jpg" alt="">
+                </div>
+                <button class="btn btn-primary">Hacer un pedido.</button>
+            </section> <!-- end content-->
+
+            <!-- Onda inferior -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#68b3ea" fill-opacity="1"
+                    d="M0,160L40,144C80,128,160,96,240,101.3C320,107,400,149,480,160C560,171,640,149,720,144C800,139,880,149,960,165.3C1040,181,1120,203,1200,208C1280,213,1360,203,1400,197.3L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+                </path>
+            </svg>
+        </article><!-- End delivery-->
+
+
+    </div> <!-- end container -->
+
+
+
+
     <script src="./js/bootstrap.js"></script>
 </body>
+
 </html>
