@@ -1,13 +1,46 @@
 /* Here goes the responsive that cant be done with boostrap and i need to make with my own css */
 
+
 @media (min-width: 770px) {
     .information__texts{
         margin-left: 80px;
     }
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
     .information{
         width: 60%;
-        
+    }
+
+    .delivery__img{
+        width: 30%;
+    }
+}
+
+/* For index */
+@media (min-width: 768px){
+    .vectors{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    .start__texts{
+        width: 40%;
+    }
+    .group{
+        width: 70% !important;
+    }
+
+    .phrase__text{
+        width: 20% !important;
+    }
+}
+
+@media (min-width: 1400px){
+    .delivery__vectorImg{
+        width: 60%;
+        margin: auto;
     }
 }

@@ -7,7 +7,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -15,27 +17,32 @@
     <div class="container-fluid">
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed">
+            <div class="container-fluid p-3">
+                <a class="navbar-brand" href="./index.html">
+                    <h2>Roffe</h2>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class=""><i class="fa-solid fa-ellipsis"></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" aria-current="page" href="#" aria-disabled="true">Inicio</a>
+                        <a class="nav-link" href="./pages/coffes.html">Tienda</a>
+                        <a class="nav-link" href="./pages/ingredients.html">Nuestro café</a>
+                        <a class="nav-link" href="./pages/shopping.html">Haz un pedído</a>
+                        <a class="nav-link" href="./pages/visitUs.html">Ven a vernos</a>
                     </div>
-                </div>
-            </div>
-        </nav>
-<!-- end navbar -->
 
-        carousel
+                </div>
+
+                <i class="fa-solid fa-cart-shopping fa__navbar"></i>
+            </div>
+        </nav><!-- end navbar -->
+
+        <!-- carousel -->
         <div id="carouselExampleCaptions" class="carousel slide">
 
             <div class="carousel-indicators">
@@ -50,14 +57,14 @@
             <!-- carouselContainer -->
             <div class="carousel-inner">
                 <!-- carouselItem -->
-                <a class="carousel-item active carousel__item link-underline-opacity-0 link-underline"
+                <a class="carousel-item active carousel__item link-underline-opacity-0 link-underline "
                     href="./pages/coffes.html">
-                    <div class="carousel__topBg">
+                    <div class="carousel__topBg position-relative d-none d-lg-block">
 
+                        <img class="carousel__coffeImg" src="./assets/images/coffeVector.png" alt="">
                     </div>
 
                     <div class="carousel__bottom position-relative d-flex flex-column">
-                        <img class="carousel__coffeImg" src="./assets/images/coffeVector.png" alt="">
 
                         <div class="container">
                             <div class="row">
@@ -90,12 +97,12 @@
 
                 <a class="carousel-item carousel__item link-underline-opacity-0 link-underline"
                     href="./pages/coffes.html">
-                    <div class="carousel__topBg">
+                    <div class="carousel__topBg position-relative d-none d-lg-block">
 
+                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolatePng.png" alt="">
                     </div>
 
-                    <div class="carousel__bottom position-relative d-flex flex-column">
-                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolatePng.png" alt="">
+                    <div class="carousel__bottom  d-flex flex-column">
 
                         <div class="container">
                             <div class="row">
@@ -103,14 +110,18 @@
                                     <div class="carousel__texts">
                                         <h2 class="carousel__title carousel__title--black">CAFÉ CHOCO</h2>
                                         <h3 class="carousel__subtitle">
-                                            Intenso, aromático y con una acidez deliciosa, despierta tus sentidos con cada bocado.</h3>
+                                            Intenso, aromático y con una acidez deliciosa, despierta tus sentidos con
+                                            cada bocado.</h3>
                                         <p>
-                                            Sumérgete en la rica indulgencia de nuestro chocolate de café, donde la intensidad del 
+                                            Sumérgete en la rica indulgencia de nuestro chocolate de café, donde la
+                                            intensidad del
                                             cacao se combina armoniosamente con notas aromáticas cautivadoras.
                                         </p>
                                         <p>
-                                            Experimenta una deliciosa danza de sabores mientras una sutil acidez eleva la 
-                                            experiencia, creando un placer irresistible en cada cuadrado. Un verdadero deleite 
+                                            Experimenta una deliciosa danza de sabores mientras una sutil acidez eleva
+                                            la
+                                            experiencia, creando un placer irresistible en cada cuadrado. Un verdadero
+                                            deleite
                                             para los amantes del chocolate y el café.
 
                                         </p>
@@ -128,12 +139,12 @@
                 <!-- carouselItem -->
                 <a class="carousel-item carousel__item link-underline-opacity-0 link-underline"
                     href="./pages/coffes.html">
-                    <div class="carousel__topBg">
+                    <div class="carousel__topBg position-relative d-none d-lg-block">
+                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolateWhitePng.png" alt="">
 
                     </div>
 
                     <div class="carousel__bottom position-relative d-flex flex-column">
-                        <img class="carousel__coffeImg" src="./assets/images/coffeChocolateWhitePng.png" alt="">
 
                         <div class="container">
                             <div class="row">
@@ -143,12 +154,15 @@
                                         <h3 class="carousel__subtitle">Equilibrado, aromático y una acidez muy
                                             agradable.</h3>
                                         <p>
-                                            Suave, exquisitamente cremoso y con una dulzura celestial, nuestro chocolate blanco
-                                            es una experiencia sublime para los sentidos. 
+                                            Suave, exquisitamente cremoso y con una dulzura celestial, nuestro chocolate
+                                            blanco
+                                            es una experiencia sublime para los sentidos.
                                         </p>
                                         <p>
-                                            Deja que la suavidad se derrita en tu paladar mientras te envuelve en notas lácteas 
-                                            seductoras. Una delicia única que te transportará a un mundo de placer indulgente.
+                                            Deja que la suavidad se derrita en tu paladar mientras te envuelve en notas
+                                            lácteas
+                                            seductoras. Una delicia única que te transportará a un mundo de placer
+                                            indulgente.
                                         </p>
                                     </div>
                                 </div>
@@ -162,6 +176,7 @@
                     </div>
                 </a>
             </div>
+
             <!-- Left button control -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
@@ -191,16 +206,19 @@
             </svg>
 
             <!-- Contenido principal -->
-            <section class="delivery d-flex flex-column flex-md-row justify-content-between wave-container">
+            <section class="delivery d-flex flex-column justify-content-between">
 
-                <div class="d-flex flex-column flex-md-row">
+                <div
+                    class="delivery__vectorImg d-lg-flex flex-lg-row justify-content-between justify-content-xxl-around">
 
                     <!-- vectors -->
-                    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                    <div class="vectors flex-column justify-content-between align-items-center flex-md-row">
 
                         <!-- First item delivery -->
-                        <div class="itemDelivery d-flex flex-column justify-content-between text-center mb-4 mb-md-0">
-                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                        <div
+                            class="itemDelivery d-flex flex-column align-items-center justify-content-between text-center mb-4 mb-md-0">
+
+                            <div class="d-flex justify-content-center align-items-center delivery__vectorContainer">
                                 <img class="delivery__vector" src="./assets/images/vectors/transportation.png" alt="">
                             </div>
                             <h3>Somos rápidos.</h3>
@@ -208,8 +226,9 @@
                         </div>
 
                         <!-- Second item delivery -->
-                        <div class="itemDelivery d-flex flex-column justify-content-between text-center mb-4 mb-md-0">
-                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                        <div
+                            class="itemDelivery d-flex flex-column align-items-center justify-content-between text-center mb-4 mb-md-0">
+                            <div class="d-flex justify-content-center align-items-center delivery__vectorContainer">
                                 <img class="delivery__vector" src="./assets/images/vectors/place.png" alt="">
                             </div>
                             <h3>Somos eficientes.</h3>
@@ -217,20 +236,22 @@
                         </div>
 
                         <!-- Third item delivery -->
-                        <div class="itemDelivery d-flex flex-column justify-content-between text-center">
-                            <div class="d-flex justify-content-center delivery__vectorContainer">
+                        <div
+                            class="itemDelivery d-flex flex-column align-items-center justify-content-between text-center">
+                            <div class="d-flex justify-content-center align-items-center delivery__vectorContainer">
                                 <img class="delivery__vector" src="./assets/images/vectors/estrella.png" alt="">
                             </div>
                             <h3>Somos de calidad.</h3>
                             <p>Texto descripción.</p>
                         </div>
-                    </div><!-- end vectors -->
 
+                    </div><!-- end vectors -->
 
                     <!-- Imagen de entrega (visible en pantallas medianas y más grandes) -->
                     <img class="delivery__img d-none d-lg-block" src="./assets/images/delivery.jpg" alt="">
                 </div>
-                <button class="btn btn-primary">Hacer un pedido.</button>
+
+                <a href="./pages/shopping.html" class="btn btn-primary w-lg-50 mx-auto mt-lg-4">Hacer un pedido.</a>
             </section> <!-- end content-->
 
             <!-- Onda inferior -->
@@ -242,12 +263,41 @@
         </article><!-- End delivery-->
 
 
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-3 footer">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Contacto</h5>
+                        <p>Calle inventada</p>
+                        <p>Teléfono: +123 456 789</p>
+                            
+                        <p>Email: info@tucafeteriaroffe.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Horario de Atención</h5>
+                        <p>Lunes a Viernes: 7:00 AM - 9:00 PM</p>
+                        <p>Sábado y Domingo: 8:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Síguenos</h5>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- end footer -->
+
+
     </div> <!-- end container -->
 
 
 
 
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

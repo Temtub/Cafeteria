@@ -7,7 +7,8 @@
     <title>Document</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -16,8 +17,34 @@
 
     <div class="container-fluid">
 
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed">
+            <div class="container-fluid p-3">
+                <a class="navbar-brand" href="../index.html"><h2>Roffe</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""><i class="fa-solid fa-ellipsis"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link " aria-current="page" href="../index.html"  >Inicio</a>
+                        <a class="nav-link disabled" aria-disabled="true" href="../pages/coffes.html">Tienda</a>
+                        <a class="nav-link" href="../pages/ingredients.html">Nuestro café</a>
+                        <a class="nav-link" href="../pages/shopping.html">Haz un pedído</a>
+                        <a class="nav-link" href="../pages/visitUs.html">Ven a vernos</a>
+                    </div>
+
+                </div>
+
+                <a href="#"><i class="fa-solid fa-cart-shopping fa__navbar"></i></a>
+            </div>
+        </nav><!-- end navbar -->
+
+        <div class="separ"></div>
         <!--cards container-->
-        <section class="cards container d-flex flex-wrap justify-content-around">
+        <section class="cards container d-flex flex-wrap justify-content-around mt-5">
 
             <!-- Card -->
             <a class="card mb-4" href="./shopping.html" style="width: 18rem;">
@@ -137,7 +164,7 @@
         <!--promotion-->
         <article class="promotion rounded rounded-5 p-5 d-flex align-items-center d-md-flex justify-content-around align-items-center">
 
-            <section class="promotion__texts text-center mb-md-0">
+            <section class="promotion__texts text-center w-100 mb-md-0">
                 <h2 class="mb-4">🌟 ¡Promoción Exclusiva! Café con Descuento del 15% 🌟</h2>
                 <p class="mb-4">¡Despierta tus sentidos con nuestra irresistible oferta! En nuestra cafetería,
                     estamos emocionados de ofrecerte un delicioso descuento del 15% en todas nuestras 
@@ -270,6 +297,32 @@
             </a>
         </section><!--End of cards-->
 
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-3 footer mt-5">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Contacto</h5>
+                        <p>Calle inventada</p>
+                        <p>Teléfono: +123 456 789</p>
+                            
+                        <p>Email: info@tucafeteriaroffe.com</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Horario de Atención</h5>
+                        <p>Lunes a Viernes: 7:00 AM - 9:00 PM</p>
+                        <p>Sábado y Domingo: 8:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="footer__title">Síguenos</h5>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-light me-2"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer><!-- end footer -->
 
     </div> <!-- end container -->
     <script src="../js/bootstrap.js"></script>

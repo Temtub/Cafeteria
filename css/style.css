@@ -14,18 +14,43 @@
     padding: 0;
     background-color: #F3EFEE;
     background-image: url("../assets/images/backgorunWhite.png");
+    min-width: 440;
 }
 
 .container-fluid--ingredients{
-    height: 6000px;
+    /* height: 6000px; */
     /* overflow: auto; */
 }
 
+/* navbar */
+.navbar{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    border-bottom: 1px solid #37190D;
+    transition: all 1s;
+}
+.fa__navbar{
+    font-size: 2rem;
+    color: #0F0A0E;
+}
+/* end navbar */
+
+.separ{
+    height: 150px;
+}
+/* carousel  */
+.carousel{
+    transition: all 1s;
+}
 .carousel__topBg{
     background-image: url("../assets/images/coffeBG.jpg");
     width: 100%;
     height: 55vh;
-    
+    min-height: 600px;
     background-repeat: no-repeat;
     background-position: right;
     background-size: contain;
@@ -39,7 +64,8 @@
 .carousel__coffeImg{
     width: 30%;
     position: absolute;
-    top: -500px;
+    /* top: -500px; */
+    top: 130px;
     left: 35%;
 
     margin-bottom: 200px;
@@ -90,8 +116,11 @@
     padding-right: 100px;
 }
 .delivery__img{
-    width: 500px;
     border-radius:54% 46% 68% 32% / 34% 29% 71% 66% ;
+    transition: all 1s;
+}
+.delivery__img:hover{
+    border-radius:44% 66% 58% 32% / 24% 29% 51% 60% ;
 }
 .delivery__vectorContainer{
     width: 160px;
@@ -314,4 +343,69 @@
         transform: translateX(0px);
         display: block;
     }
+}
+/*visit Us*/
+
+/*start*/
+.start__texts{
+    width: 80%;
+}
+.start__list{
+    margin-top: 55px;
+}
+.start__links{
+    text-decoration: none;
+    color: #0F0A0E;
+    font-family: OswaldBold;
+}
+/* end start*/
+
+/* about us img */
+.aboutUsImg__img{
+    width: 60%;
+}
+.workWith__img{
+    width: 120px;
+    height: 70px;
+}
+
+/* end about us img */
+
+/* group  */
+.group--gorup{
+    background-color: #68b3ea;
+}
+.group__img{
+    width: 200px;
+}
+.group__texts{
+    width: 60%;
+}
+/* end group  */
+
+/* phrase */
+.phrase__quotation{
+    font-size: 5rem;
+    
+}
+.phrase__text{
+    width: 20%;
+    margin-top: -55px;
+}
+.phrase__name{
+    margin-top: -10px;
+}
+/* end phrase */
+/*end visit us*/
+
+
+/* footer */
+.footer{
+    background-color: #052B52 !important;
+}
+.footer__title{
+    color: #68b3ea;
+}
+.footer--ingredients{
+    margin-top: 250px;
 }
