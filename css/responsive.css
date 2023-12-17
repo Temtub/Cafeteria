@@ -1,0 +1,13 @@
+/* Here goes the responsive that cant be done with boostrap and i need to make with my own css */
+
+@media (min-width: 770px) {
+    .information__texts{
+        margin-left: 80px;
+    }
+}
+@media (min-width: 1000px) {
+    .information{
+        width: 60%;
+        
+    }
+}

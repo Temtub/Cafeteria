@@ -10,17 +10,119 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
 </head>
 
 <body>
 
     <!-- container -->
-    <div class="container-fluid">
+    <div class="container-fluid container-fluid--ingredients">
 
-        <div>
-            
-        </div>
+        <!-- steps 1 of creation -->
+        <section id="step1" class="d-flex flex-column align-items-center justify-content-between position-relative">
+
+
+            <!--information step-->
+            <article class="d-flex flex-row information justify-content-between align-items-center ">
+                
+                <img class="information__img d-none d-md-block" src="../assets/images/pasos/coffeCherry.png" alt="">
+                
+                <div class="information__texts w-100 w-md-50">
+                    <h2 class="informatin__title">El Cultivo y La Recolecta <span class="information__icon">👨‍🌾</span></h2>
+                    <p class="informatin__par">
+                        La producción de café inicia con la siembra en climas tropicales y subtropicales. 
+                        Los árboles, generalmente Arabica o Robusta, dan lugar a cerezas de café. 
+                    </p>
+                    <p>
+                        La cosecha 
+                        se realiza manual o mecánicamente, seleccionando solo las cerezas maduras para garantizar la calidad.
+                    </p>
+                </div>
+            </article><!--enf of informatin step-->
+
+            <a href="#step2" class="information__anchor position-absolute"> <i class="fa-solid fa-circle-arrow-down"></i> </a>
+        </section><!--end of steps of creation-->
+
+
+        <!-- steps 2 of creation -->
+        <section id="step2" class="d-flex flex-column align-items-center justify-content-between position-relative">
+
+
+            <!--information step-->
+            <article class="d-flex flex-row information justify-content-between align-items-center ">
+                
+                
+                <div class="information__texts w-100 w-md-50">
+                    <h2 class="informatin__title">El Despulpado, la Fermentación y Secado <span class="information__icon">🔥</span></h2>
+                    <p class="informatin__par">
+                        Tras la cosecha, las cerezas se despulpan para extraer los granos. Esto se logra mediante métodos húmedos o secos, influenciando el sabor final del café.
+                    </p>
+                    <p>
+                        Algunos métodos implican la fermentación de las cerezas, proceso que afecta la acidez y complejidad del sabor del café.
+                    </p>
+
+                    <p>
+                        Los granos se secan al sol o en secadoras mecánicas para reducir la humedad, influyendo en la calidad, estabilidad y características finales del grano.
+                    </p>
+                </div>
+                <img class="information__img d-none d-md-block ms-4" src="../assets/images/pasos/fermentado.png" alt="">
+            </article><!--enf of informatin step-->
+
+            <a href="#step3" class="information__anchor position-absolute"> <i class="fa-solid fa-circle-arrow-down"></i> </a>
+        </section><!--end of steps of creation-->
+
+        <!-- steps 3 of creation -->
+        <section id="step3" class="d-flex flex-column align-items-center justify-content-between position-relative">
+
+
+            <!--information step-->
+            <article class="d-flex flex-row information justify-content-between align-items-center ">
+                
+                
+                <div class="information__texts w-100 w-md-50">
+                    <h2 class="informatin__title">El Tostado y la Molienda <span class="information__icon">♨</span></h2>
+                    <p class="informatin__par">
+                        Durante el tostado, los granos adquieren su sabor característico y aroma, 
+                        con transformaciones químicas complejas que determinan el perfil de sabor final.
+                    </p>
+                    <p>
+                        Previo a la preparación, los granos tostados se muelen para preservar frescura y sabor,
+                         variando según el método de preparación seleccionado.
+                    </p>
+                </div>
+                <img class="information__img d-none d-md-block" src="../assets/images/pasos/cafeMolidoGrano.png" alt="">
+            </article><!--enf of informatin step-->
+
+            <a href="#step4" class="information__anchor position-absolute"><i class="fa-solid fa-circle-arrow-down"></i></i> </a>
+        </section><!--end of steps of creation-->
+
+        <!-- steps 3 of creation -->
+        <section id="step4" class="d-flex flex-column align-items-center justify-content-between position-relative">
+
+
+            <!--information step-->
+            <article class="d-flex flex-row information justify-content-between align-items-center ">
+                
+                
+                <div class="information__texts w-100 w-md-50">
+                    <h2 class="informatin__title">La Preparación y a Disfrutar <span class="information__icon">✨</span></h2>
+                    <p class="informatin__par">
+                        La preparación implica elegir métodos como la cafetera de goteo, prensa francesa 
+                        o espresso, con factores clave como cantidad de café, temperatura y tiempo de 
+                        preparación.
+                    </p>
+                    <p>
+                        Finalmente, el café se sirve y disfruta, ya sea solo o con adiciones según las 
+                        preferencias personales, brindando una experiencia única con cada sorbo.
+                    </p>
+                </div>
+                <img class="information__img d-none d-md-block" src="../assets/images/pasos/disfrutar.png" alt="">
+            </article><!--enf of informatin step-->
+
+            <a href="#step1" class="information__anchor information__anchor--hand position-absolute">👆</i> </a>
+        </section><!--end of steps of creation-->
     </div> <!-- end container -->
 
     <script src="../js/bootstrap.js"></script>

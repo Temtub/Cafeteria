@@ -6,11 +6,19 @@
     font-family: OswaldBold;
     src: url("../assets/fonts/Oswald-Bold.ttf");
 }
-
+*{
+    scroll-behavior: smooth;
+    
+}
 .container-fluid{
     padding: 0;
     background-color: #F3EFEE;
     background-image: url("../assets/images/backgorunWhite.png");
+}
+
+.container-fluid--ingredients{
+    height: 6000px;
+    /* overflow: auto; */
 }
 
 .carousel__topBg{
@@ -43,7 +51,7 @@
     font-size: 5rem;
 
     background: -webkit-linear-gradient(#632b0a, #a5501f);
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .carousel__title--black{
@@ -225,5 +233,85 @@
     border-radius: 0px 10px 10px 0px;
     .form__img{
         border-radius: 0px 10px 10px 0px;
+    }
+}
+
+/*end asides*/
+
+/* informations*/
+
+.information{
+    width: 100%;
+    /* margin-top: 1000px; */
+
+    view-timeline-name: --information;
+    view-timeline-axis: block;
+
+    animation-timeline: --information;
+    animation-name: showRigth;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+
+    background-color: rgba(255, 255, 255, 0.397);
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 10px 1px gray;
+
+    transition: all 1s;
+
+    margin-top: 35vh;
+}
+
+
+.information__img{
+    
+    transition: border-radius 1s;
+
+    width: 20%;
+
+}
+.information__img:hover{
+    
+}
+.information__texts{
+    width: 60%;
+    
+}
+
+.information__anchor{
+    bottom: -11%;
+    z-index: 10;
+    color: #37190D;
+    text-decoration: none;
+}
+.information__anchor--hand{
+    font-size: 1.6rem;
+}
+.informatin__title{
+    font-size: 3rem;
+    font-family: OswaldBold;
+
+    background-image: url("../assets/images/fontBg/whiteBrown.jpg"); 
+    background-repeat: repeat; 
+    background-clip: text; 
+    background-size: cover;
+    background-position: 100px;
+    -webkit-text-fill-color: transparent; 
+    
+    -webkit-font-smoothing: antialiased; 
+}
+.information__icon{
+    -webkit-text-fill-color: currentColor; 
+}
+
+@keyframes showRigth {
+    from{
+        transform: translateX(400px);
+        display: none;
+    }
+    to{
+        transform: translateX(0px);
+        display: block;
     }
 }
